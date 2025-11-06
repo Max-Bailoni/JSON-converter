@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treat Dev Task</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-yHhE... (hash truncated for brevity) ..." crossorigin="anonymous" referrerpolicy="no-referrer />
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+</head>
+<body>
+
+    <header>
+        <div class="main-header">
+            <img src="/public/generated-image.png" alt="Sample Logo" id="logo"/>
+                <ul class="header-content">
+                    <li>
+                        <p >Hi, User</p>
+                    </li>
+                    <li>
+                        <img src="/public/user.png" id="user"/>
+                    </li>
+                </ul>
+        </div>
+        <div class="side-header">
+            <ul>
+                <li>
+                    <a href="#">
+                        Home <span style="font-size: 30px;">&#8594;</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Verwalten <span style="font-size: 30px;">&#8594;</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Melden <span style="font-size: 30px;">&#8594;</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Berichte <span style="font-size: 30px;">&#8594;</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-body">
+            <div class="left">
+                <h4 class="">Shortcuts - Objekt</h4>
+                <div class="facettes">
+                    <div>
+                        <i class="fas fa-external-link"></i>
+                        <p>Reifen</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-external-link"></i>
+                        <p>Schaden</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-external-link"></i>
+                        <p>Unfall</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="middle">
+                <h1 class="mt-2">W-12345A</h1>
+                <div class="selection">
+                    <button class="icon-btn mt-2 submit">
+                        <span class="icon-circle">
+                            &#128462;
+                        </span>
+                        <span class="btn-text">Daten</span>
+                    </button>
+                    <button class="icon-btn mt-2 submit">
+                        <span class="icon-circle">
+                            &#128462;
+                        </span>
+                        <span class="btn-text">Bilder</span>
+                    </button>
+                    <button class="icon-btn mt-2 submit">
+                        <span class="icon-circle">
+                            &#128462;
+                        </span>
+                        <span class="btn-text">Dokumente</span>
+                    </button>
+                    <button class="icon-btn mt-2 submit">
+                        <span class="icon-circle">
+                            &#128462;
+                        </span>
+                        <span class="btn-text">Schadensfälle</span>
+                    </button>
+                </div>
+
+                <form id="form" role="form" aria-labelledby="formTitle">
+                    <span id="formTitle" class="visually-hidden">Fahrzeugdaten Formular</span>
+                    <div class="up" role="group" aria-labelledby="groupUpLabel">
+                        <span id="groupUpLabel" class="visually-hidden">Fahrzeugdaten: weitere Links</span>
+                        <div>
+                            <label for="id" class="form-label">Vehicle ID</label>
+                            <input type="number" class="form-control" id="id" name="id" aria-labelledby="idLabel">
+                            <span id="idLabel" class="visually-hidden">Vehicles ID in database</span>
+                        </div>
+                        <div class="mt-3">
+                            <label for="vin" class="form-label">VIN</label>
+                            <input type="text" class="form-control" id="vin" name="vin" aria-labelledby="vinLabel">
+                            <span id="vinLabel" class="visually-hidden">Vehicles identification number</span>
+                        </div> 
+                    </div>
+                    <div class="mid" role="group" aria-labelledby="groupMidLabel">
+                        <span id="groupMidLabel" class="visually-hidden">Formular Fahrzeugdaten</span>
+                        <div class="mt-3">
+                            <label for="brand" class="form-label">Brand</label>
+                            <input type="text" class="form-control" id="brand" name="brand" aria-labelledby="brandLabel">
+                            <span id="brandLabel" class="visually-hidden">Vehicles brand</span>
+                        </div>
+                        <div class="mt-3">
+                            <label for="model" class="form-label">Model</label>
+                            <input type="text" class="form-control" id="model" name="model" aria-labelledby="modelLabel">
+                            <span id="modelLabel" class="visually-hidden">Vehicles model</span>
+                        </div>
+                        <div class="mt-3">
+                            <label for="dateRegistration" class="form-label">First registration</label>
+                            <input type="date" class="form-control" id="dateRegistration" name="dateRegistration" aria-isdescribedby="regLabel">
+                            <span id="regLabel" class="visually-hidden">Vehicles first registration</span>
+                        </div>
+                        <div class="mt-3">
+                            <label for="vehicleClass" class="form-label">Vehicle Class</label>
+                            <input type="text" class="form-control" id="vehicleClass" name="vehicleClass" aria-labelledby="classLabel">
+                            <span id="classLabel" class="visually-hidden">Vehicles Class</span>
+                        </div>
+                        <div class="mt-3 form-group">
+                            <label for="vehicleStatusInput" class="form-label">Vehicle Status</label>
+                            <div class="dropdown" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-owns="vehicleStatusList" aria-controls="vehicleStatusList" aria-labelledby="vehicleStatusDropdownLabel">
+                                <button class="btn btn-light dropdown-toggle" type="button" id="vehicleStatusDropdown" aria-activedescendant="" aria-labelledby="vehicleStatusDropdownLabel" aria-controls="vehicleStatusList" aria-expanded="false">Select ...</button>
+                                <ul id="vehicleStatusList" role="listbox" class="dropdown-menu" style="display: none;" aria-labelledby="vehicleStatusDropdown">
+                                    <li id="statusOption1" role="option" aria-selected="false" tabindex="-1">In order</li>
+                                    <li id="statusOption2" role="option" aria-selected="false" tabindex="-1">Active</li>
+                                </ul>
+                            </div>
+                            <input type="hidden" id="vehicleStatusInput" name="vehicleStatus" value="" aria-labelledby="vehicleStatusDropdownLabel">
+                            <span id="vehicleStatusDropdownLabel" class="visually-hidden">Vehicle Status dropdown</span>
+                        </div>
+                        <div class="mt-3">
+                            <label for="driveType" class="form-label">Drive Type</label>
+                            <input type="text" class="form-control" id="driveType" name="driveType" aria-labelledby="typeLabel">
+                            <span id="typeLabel" class="visually-hidden">Vehicles drive type</span>
+                        </div>
+                        <div class="mt-3">
+                            <label for="kerbWeight" class="form-label">Kerb Weight <span class="fw-normal">kg</span></label>
+                            <input type="text" class="form-control" id="kerbWeight" name="kerbWeight" aria-labelledby="weightLabel">
+                            <span id="weightLabel" class="visually-hidden">Vehicles weight</span>
+                        </div>
+                        <div class="mt-3">
+                            <label for="co2" class="form-label">CO2 witp g/km</label>
+                            <input type="text" class="form-control" id="co2" name="co2" aria-labelledby="co2Label">
+                            <span id="co2Label" class="visually-hidden">Vehicles Co2 emission</span>
+                        </div>
+                        <div class="mt-3">
+                            <label for="next57a" class="form-label">Next 57a dt</label>
+                            <input type="date" class="form-control" id="next57a" name="next57a" aria-labelledby="dtLabel">
+                            <span id="dtLabel" class="visually-hidden">Vehicles next dt</span>
+                        </div>
+                        <div class="mt-3">
+                            <label for="acqValue" class="form-label">Acquisition Value <span class="fw-normal">EUR (gross)</span></label>
+                            <input type="text" class="form-control" id="acqValuea" name="acqValue" aria-labelledby="valLabel">
+                            <span id="valLabel" class="visually-hidden">Vehicles value</span>
+                        </div>
+                        <div class="mt-3 form-group">
+                            <label for="siteNameInput" class="form-label">Site Name</label>
+                            <div class="dropdown" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-owns="siteNameList" aria-controls="siteNameList" aria-labelledby="siteNameDropdownLabel">
+                                <button class="btn btn-light dropdown-toggle" type="button" id="siteNameDropdown" aria-activedescendant="" aria-labelledby="siteNameDropdownLabel" aria-controls="siteNameList" aria-expanded="false">Select ...</button>
+                                <ul id="siteNameList" role="listbox" class="dropdown-menu" style="display: none;" aira-labelledby="siteNameDropdown">
+                                    <li id="siteOption1" role="option" aria-selected="false" tabindex="-1">Klagenfurt</li>
+                                    <li id="siteOption2" role="option" aria-selected="false" tabindex="-1">Linz</li>
+                                </ul>
+                            </div>
+                            <input type="hidden" id="siteNameInput" name="siteName" value="" aria-labelledby="siteNameDropdownLabel">
+                            <span id="siteNameDropdownLabel" class="visually-hidden">Site Name dropdown</span>
+                        </div>
+                        <div class="mt-3">
+                            <label for="ccc" class="form-label">Cost Center Code</label>
+                            <input type="text" class="form-control" id="ccc" name="ccc">
+                        </div>
+                    </div>
+
+                    <div class="bot">
+                        <span id="groupBotLabel" class="visually-hidden">Kunden- und Firmeninformationen</span>
+                        <div class="mt-3">
+                            <label for="customer" class="form-label">Customer Name</label>
+                            <input type="text" class="form-control" id="customer" name="customer" placeholder="Customer Name" aria-labelledby="custLabel">
+                            <span id="custLabel" class="visually-hidden">Vehicles Owner</span>
+                        </div>
+                        <div class="mt-3">
+                            <label for="corporate" class="form-label">Corporate Group</label>
+                            <input type="text" class="form-control" id="corporate" name="corporate" placeholder="Customer Group" aria-labelledby="corpLabel">
+                            <span id="corpLabel" class="visually-hidden">Vehicles Corporate Name</span>
+                        </div>
+                    </div>
+                    <button type="submit" class="icon-btn mt-5 submit">
+                        <span class="icon-circle">
+                            &#129034;
+                        </span>
+                        <span class="btn-text">Formular senden</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="prime-footer">
+            <div>
+                <ul>
+                    <li>
+                        <a href="#">Imprint</a>
+                    </li>
+                    <li>
+                        <a href="#">Datenschutz</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>&copy; Company GmbH</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/ariaVehicle.js"></script>
+    <script src="/js/ariaSite.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/json.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>
